@@ -57,3 +57,6 @@
 # Setup the Docker Swarm Cluster
 - include: swarm_cluster.yml
   when: not skip_swarm
+
+- include: docker_compose.yml
+  when: not skip_engine
